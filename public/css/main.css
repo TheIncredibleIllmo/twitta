@@ -12,6 +12,16 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -19,7 +29,8 @@ nav {
   height: 100%;
 }
 
-nav a {
+nav a,
+button {
   padding: 10px;
   font-size: 30px;
   width: 55px;
@@ -33,7 +44,8 @@ nav a.blue {
   color: var(--blue);
 }
 
-nav a:hover {
+nav a:hover,
+button:hover {
   color: var(--blue);
   background-color: var(--buttonHoverBg);
   border-radius: 50%;
